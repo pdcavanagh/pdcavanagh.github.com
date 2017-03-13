@@ -205,7 +205,7 @@ imageObj.onload = function() {
     }, timeInterval);
 };
 
-imageObj.src = './images/portrait.jpg';
+imageObj.src = '../images/portrait.jpg';
 
 /* Response navbar */
 function responsiveNavbar() {
