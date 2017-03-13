@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Humble Dev</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel|Source+Code+Pro">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+  <!-- Start Navbar Section -->
+  <nav>
+    <ul class="topnav" id="myTopnav">
+      <li><a href="#">The Humble Dev</a></li>
+      <li><a href="#portfolio">Portfolio</a></li> 
+      <li><a href="#about">About</a></li> 
+      <li><a href="#contact">Contact</a></li>
+      <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="responsiveNavbar()">&#9776;</a></li>
+    </ul>
+  </nav> 
+
+  <!-- Start Hero Section-->
+  <div id="fullscreen-hero" class="home-hero">
+    <div class="hero-container">
+      <div class="hero-content">
+<!--         <div class="intro"> -->
+          <a href="#" class="home-logo">
+            <!-- <img src="logo.svg" onerror="this.src='logo.png'"> -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 192.5 222.3" style="enable-background:new 0 0 192.5 222.3;" xml:space="preserve">
+              <line class="st0" x1="43.9" y1="68.8" x2="43.9" y2="153.5"/>
+              <polyline class="st1" points="43.9,110.1 86.3,110.1 86.3,68.8 36.4,68.8 36.4,153.5 "/>
+              <polyline class="st1" points="156.1,68.8 106.2,68.8 106.2,155.9 "/>
+              <polyline class="st1" points="156.1,153.5 113.7,153.5 113.7,68.8 "/>
+              <polygon class="st2" points="186.5,163.3 96.3,215.4 6,163.3 6,59 96.3,6.9 186.5,59.1 "/>
+            </svg>
+          </a>
+<!--           <div class="profileImg">
+            <canvas class="pixel-focus-img" id="canvas"></canvas>
+          </div> -->
+          <h1>Hi, I'm Patrick. I write software and design for the web.</h1>
+<!--           <div class="summary" id="container">
+            <div id="message"></div>
+            <div class="profileImg">
+              <canvas class="pixel-focus-img" id="canvas"></canvas>
+            </div>
+          </div> -->
+<!--         </div> -->
+
+<!--         <div class="page-scroll"><a href="#sub-footer" class="button button-ghost">Yes, I'm Available For Hire</a></div>
+        <div class="page-scroll learn-more">
+          <a href="#me">Learn more about what I do<br><i class="fa fa-chevron-down"></i></a><
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+<!--   <div class="intro">
+
+    <div class="summary" id="container">
+      <div id="message"></div>
+    </div>
+  </div> -->
+
+
+  <!-- About Section -->
+  <h1 class="section-title text-center">About</h1>
+  <div class="about animated fadeIn" id="about">
+    <div class="about-img">
+      <canvas class="pixel-focus-img" id="canvas"></canvas>
+    </div>
+    <div class="about-text">
+      <p>Hi, I'm Patrick Cavanagh.</p>
+      <p>I am a software engineer with a passion for frontend web development, embedded software, algorithms, and data. Previously, I have worked on a wide range of projects including medical imaging, remote sensing, space instrument flight software, and Mars rover data analysis. These days I am seeking fulltime development work as I finish my PhD at Indiana University.</p>
+
+      <p>I currently live in Indianapolis, IN, home of the latest and greatest coffee and tech scene. I play and produce music. I also love to run.</p>
+
+      <p>I am always interested in hearing from new people. Feel free to <a href="#contact">reach out</a> to me and take a look at my resume.</p>
+    </div>
+  </div>
+
+
+
+  <!-- Load deferred style sheets -->
+  <noscript id="deferred-styles">
+    <link rel="stylesheet" type="text/css" href="./font-awesome-4.7.0/css/font-awesome.min.css"> 
+  </noscript>
+  <script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
+ 
+  <!-- Portfolio thumbnail section --> 
+  <div class="section animated fadeIn" id="portfolio">
+    <h1 class="section-title text-center">Portfolio</h1>
+    <div class="portfolio">
+      <!-- Project6 -->
+      <div class="project">
+        <img class="project-image" src="../images/project6.jpg" alt="" id="project6">
+        <div class="overlay">
+          <h2>Crypt - Message Encryption</h2>
+          <ul class="techTags">
+            <li class="techTag">JavaScript</li>
+            <li class="techTag">HTML</li>
+            <li class="techTag">CSS</li>
+            <li class="techTag">Node.js</li>
+            <li class="techTag">crypto.js</li>
+            <li class="techTag">Git</li>
+          </ul>
+          <ul>
+            <li>Designed UI for crypto.js module</li>
+            <li>Allows for encryption/decryption of messages using AES, TripleDES, and Rabbit</li>
+            <li>Handles encryption/decryption through API calls to Node.js backend</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Project4 -->
+      <div class="project">
+        <img class="project-image" src="../images/project4.jpg" alt="" id="project4">
+        <div class="overlay">
+          <h2>Crossroads Geology Conference</h2>
+          <ul class="techTags">
+            <li class="techTag">JavaScript</li>
+            <li class="techTag">HTML</li>
+            <li class="techTag">CSS</li>
+            <li class="techTag">Bootstrap</li>
+            <li class="techTag">Git</li>
+          </ul>
+          <ul>
+            <li>Responsive website design</li>
+            <li>Contains conference information, abstract submission, speakers, and sponsor profiles</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Project5 -->
+      <div class="project">
+        <img class="project-image" src="../images/project5.jpg" alt="" id="project5">
+        <div class="overlay">
+          <h2>Dijkstra Tribute Website</h2>
+          <ul class="techTags">
+            <li class="techTag">HTML</li>
+            <li class="techTag">CSS</li>
+            <li class="techTag">Bootstrap</li>
+            <li class="techTag">Git</li>
+          </ul>
+          <ul>
+            <li>Responsive website design</li>
+            <li>Features biographical information about Edsger Dijkstra</li>
+          </ul>
+        </div>
+      </div>  
+      <!-- Project2 -->
+      <div class="project">
+        <img class="project-image" src="../images/project2.jpg" alt="" id="project2">
+        <div class="overlay">
+          <h2>Mars Science Laboratory Rover</h2>
+          <ul class="techTags">
+            <li class="techTag">Python</li>
+            <li class="techTag">NumPy</li>
+            <li class="techTag">SciPy</li>
+            <li class="techTag">PuLP</li>
+            <li class="techTag">Git</li>
+          </ul>
+          <ul>
+            <li>Analyzed data from the Mars Curiosity rover</li>
+            <li>Modeled composition of Mars soil using linear programming optimizations</li>
+            <li>UI design and implementation using PyQt 4</li>
+            <li>Wrote scripts to sequence instrument telecommands and telemetry processing</li>
+          </ul>
+          <p class="text-right">Image Credit: NASA/JPL-Caltech/MSSS</p>
+        </div>
+      </div>
+      <!-- Project1 -->
+      <div class="project">
+        <img class="project-image" src="../images/project1.jpg" alt="" id="project1">
+        <div class="overlay">
+          <h2>Solar Orbiter-SPICE Instrument</h2>
+          <ul class="techTags">
+            <li class="techTag">C</li>
+            <li class="techTag">Python</li>
+            <li class="techTag">Perl</li>
+            <li class="techTag">Mercurial</li>
+          </ul>
+          <ul>
+            <li>Embedded flight software for Spectral Imaging of the Coronal Environment (SPICE) instrument</li>
+            <li>Real-time operating system development</li>
+            <li>Unit testing and integration</li>
+            <li>Image compression implementation</li>
+            <li>Data product visualization for ground support equipment</li>
+          </ul>
+          <p class="text-right">Image Credit: <a href="http://sci.eas.int/solar-orbiter">ESA</a></p>
+        </div>
+      </div>
+      <!-- Project3 -->
+      <div class="project">
+        <img class="img-responsive" src="../images/project3.jpg" alt="" id="project3">
+        <div class="overlay">
+          <h2>Lunar Remote Sensing</h2>
+          <ul class="techTags">
+            <li class="techTag">MATLAB</li>
+            <li class="techTag">IDL</li>
+          </ul>
+          <ul>
+            <li>Moon Mineralogy Mapper (M<sup>3</sup>) data anlaysis</li>
+            <li>Compression algorithm design</li>
+          </ul>
+          <p class="text-right">Image credit: ISRO/NASA/JPL-Caltech/Brown Univ.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Contact section --> 
+<!--   <div id="contact"> -->
+  <!-- Messaging section --> 
+<!--     <div class="col-sm-6">
+       <form method="post" name="myemailform" action="/message">
+         <div class="form-group">
+           <label for="inputName">Name</label>
+           <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Name">
+         </div>
+         <div class="form-group">
+           <label for="inputEmail">Email address</label>
+           <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email">
+         </div>
+         <div class="form-group">
+           <label for="inputMsg">How can I help you? I'd love to hear from you!</label>
+           <textarea class="form-control" name="inputMsg" id="inputMsg" rows="3" placeholder="To be, or not to be ..."></textarea>
+         </div>
+         <button type="submit" class="btn btn-default">Submit</button> 
+      </form>
+    </div> -->
+
+  <!-- Social Contacts -->
+  <div class="contact text-center" id="contact"> 
+    <h1 class="section-title">Contact</h1>
+    <div class="contact-icons fa-4x">
+      <a href="https://www.twitter.com/pdcavanagh">
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/pdcavanagh">
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/pdcavanagh">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="mailto:pdcavanaghATyahooDOTcom">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </div>
+  </div> <!-- end of contact -->
+
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-82755381-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <footer id="mainFooter">
+    <div class="text-center">
+      <span>Coded with &#9825 and <i class="fa fa-coffee" aria-hidden="true"></i>, Patrick Cavanagh, 2017</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>  
+
+</body>
+</html>
+
