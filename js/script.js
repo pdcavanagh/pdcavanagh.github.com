@@ -205,7 +205,7 @@ imageObj.onload = function() {
     }, timeInterval);
 };
 
-imageObj.src = '../images/portrait.jpg';
+imageObj.src = 'https://github.com/pdcavanagh/portfolio/blob/master/images/portrait.jpg';
 
 /* Response navbar */
 function responsiveNavbar() {
