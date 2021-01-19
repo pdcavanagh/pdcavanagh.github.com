@@ -9,7 +9,7 @@ window.onload = function() {
 
         MESSAGES.push({
             delay: 800,
-            text: '— Software Engineer'
+            text: '— Creative Engineer'
         });
         MESSAGES.push({
             delay: 1800,
