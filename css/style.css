@@ -154,11 +154,11 @@ display: none;
   font-family: 'Cabin', Sans-serif;
   background: linear-gradient(
     to bottom, 
-    black, black 20%, 
+    #A9E2AD, #A9E2AD 20%, 
     transparent 20%, transparent 40%, 
-    black 40%, black 60%, 
+    #A9E2AD 40%, #A9E2AD 60%, 
     transparent 60%, transparent 80%, 
-    black 80%, black 100%
+    #A9E2AD 80%, #A9E2AD 100%
   );
 }
 
