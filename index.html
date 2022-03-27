@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="images/icon.ico">
+	<link rel="icon" href="./images/icon.ico">
 	<title>Patrick D. Cavanagh - Geochemist and Planetary Scientist</title>
 	<link rel="stylesheet" href="css/style.css"> 
 	<script src="https://use.fontawesome.com/eaebdf8a0c.js"></script>
@@ -21,41 +21,50 @@
     </script>
 </head>
 <body>
-	<ul class="topnav">
-			<li class="logo">Patrick D. Cavanagh</li>
-			<li class="right"><a href="#contact">Contact</a></li>
-			<li class="right"><a href="#education">Education</a></li>
-			<li class="right"><a href="#engineering">Engineering</a></li>
-			<li class="right"><a href="#research">Research</a></li>
-			<li class="right"><a href="#about">About</a></li>
-			<!-- <li class="right"><a href="#news">News</a></li> -->
-	</ul>
-	<div class="hero">
+	<nav id="main-menu">
+		<ul>
+			<li><a href="#about">About</a></li>
+			<li><a href="#research">Research</a></li>
+			<li><a href="#engineering">Engineering</a></li>
+			<li><a href="#education">Education</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+	<input type="checkbox" id="hamburger-input" class="burger-shower" />
+	<label id="hamburger-menu" for="hamburger-input">
+		<nav id="sidebar-menu">
+			<h3>Menu</h3>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#research">Research</a></li>
+				<li><a href="#engineering">Engineering</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</label>
+
+	<section class="hero">
 		<div class="title">
-				<img class="headshot" src="./images/headshot.jpg">
+			<img class="headshot" src="./images/headshot.jpg">
 			<h1>Patrick D. Cavanagh Ph.D.</h1>
 			<h2>Planetary Scientist | Software Engineer</h2>
 		</div>
-	</div>
+	</section>
 
-	<div class="section" id="education">
-		<h3>Education</h3>
-		<span><strong>Ph.D. Geological Sciences</strong></span>
-		<br />
-		<span>2021, Indiana University, Bloomington, IN<br /> Minor: Chemistry</span>
-		<br />
-		<br />
-		<span><strong>B.S. Computer Engineering with Distinction</strong></span>
-		<br />
-		<span>2012, Purdue University (IUPUI), Indianapolis, IN<br /> Minors: Mathematics, Computer Science</span>
-	</div>
-	<div class="section" id="about">
+	<section id="about">
 		<h3>About</h3>
 		<p>I am a multidisciplinary planetary scientist investigating mineralogy and geochemical processes on the surface of Mars, Earth, and the Moon. My research focuses on better understanding the sulfur
 cycle on terrestrial planetary bodies through use of X-ray diffraction laboratory studies, stable sulfur isotopes, and spectroscopy. In addition, I look at the interaction of microbial
 life with minerals on the surface on Earth in extreme environments, such as Greenland and Antarctica, and its implications for the the survival of organisms on other planets.</p>
 		<p>I also have a deep passion for the intersection of science and engineering that occurs during mission design, planning, and operations. I am actively seeking opportunities to 
 			further my contribution to the future exploration of the terrestrial planets and ocean worlds.</p>
+	</section>
+	
+	<hr />
+	
+	<section id="research">
 		<h3>Research Interests</h3>
 			<ul>
 				<li>Mineralogy - sulfates, clay minerals, and amorphous materials on Mars</li>
@@ -64,8 +73,11 @@ life with minerals on the surface on Earth in extreme environments, such as Gree
 				<li>Biogeochemistry</li>
 				<li>Remote sensing and VNIR spectroscopy</li>
 			</ul>
-	</div>
-	<div class="section" id="engineering">
+	</section>
+
+	<hr />
+
+	<section id="engineering">
 		<h3>Engineering and Mission Operations</h3>
 		<p><strong>Mars Science Laboratory (MSL) Collaborator</strong> with the CheMin instrument - As part of the team, I participated in group scientific discussions, presented at scientific conferences, analyzed XRD data from the mission, and performed uplink/downlink operations tasks.</p>
 		<p><strong>Software Engineer</strong> on SPICE instrument onboard ESA's Solar Orbiter mission. Launched: February 10,
@@ -77,8 +89,25 @@ life with minerals on the surface on Earth in extreme environments, such as Gree
 				<li>Image compression implementation
 				<li>Data product visualization for ground support equipment
 			</ul>
-	</div>
-	<div class="section" id="research">
+	</section>
+
+	<hr />
+	
+	<section id="education">
+		<h3>Education</h3>
+		<span><strong>Ph.D. Geological Sciences</strong></span>
+		<br />
+		<span>2021, Indiana University, Bloomington, IN<br /> Minor: Chemistry</span>
+		<br />
+		<br />
+		<span><strong>B.S. Computer Engineering with Distinction</strong></span>
+		<br />
+		<span>2012, Purdue University (IUPUI), Indianapolis, IN<br /> Minors: Mathematics, Computer Science</span>
+	</section>
+
+	<hr />
+	
+	<section id="research">
 		<h3>Publications</h3>
 		<ul>
 			<li><strong>Cavanagh, P.D.</strong>, Fang, M., Moore, T., Pratt, L. M., and Bauer, C. (2022) Characterization of microbial communities associated with sulfate mineralogy on Greenland permafrost. (in prep)</li>
@@ -100,10 +129,11 @@ life with minerals on the surface on Earth in extreme environments, such as Gree
 			<li><a href="https://www.hou.usra.edu/meetings/lpsc2015/pdf/2620.pdf">Treiman, A. H. et al. (2015), Mineralogy and Genesis of the Windjana Sandstone, Kimberley Area, Gale Crater Mars, in Lunar and Planetary Science Conference, vol. 46, p. 2620.</a></li>
 			<li><a href="https://www.lpi.usra.edu/meetings/lpsc2012/pdf/2742.pdf"><strong>Cavanagh, P. D.</strong>, and L. Li (2012), Band Selection Method Applied to Moon Mineralogy Mapper (M^3), in Lunar and Planetary Institute Science Conference Abstracts, vol. 43, p. 2742.</a></li>
 		</ul>
-	</div>
+	</section>
 
-	<!-- CONTACT SECTION -->
-	<div class="section" id="contact">
+	<hr />
+	
+	<section id="contact">
 		<h3>Contact</h3>
 	    <div class="contact-icons">
 	      <a href="https://www.twitter.com/pdcavanagh">
@@ -119,11 +149,11 @@ life with minerals on the surface on Earth in extreme environments, such as Gree
 	        <i class="fa fa-envelope"></i>
 	      </a>
 	    </div>
-	</div>
-	<footer id="mainFooter">
-			<div class="text-center">
-				<span>Coded with ♡ and <i class="fa fa-coffee" aria-hidden="true"></i>, Patrick D. Cavanagh, 2022</span>
-			</div>
-		</footer>
+	</section>
+	<footer>
+		<div class="text-center">
+			<span>Coded with ♡ and <i class="fa fa-coffee" aria-hidden="true"></i>, Patrick D. Cavanagh, 2022</span>
+		</div>
+	</footer>
 </body>
 </html>
